@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kasama Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $(".h1").hide();
+      $("header").hover(function(){
+        $(".h1").fadeIn(3000);
+  });
+});
+    $(document).ready(function(){
+      $(".hero").hide();
+      $(".h1").hover(function(){
+        $(".hero").fadeIn(3000);
+  });
+});
+$(document).ready(function(){
+      $(".menu-item-text").hide();
+      $(".menu-item").hover(function(){
+        $(".menu-item-text").fadeIn(3000);
+  });
+});
+$(document).ready(function(){
+      $(".cooks").hide();
+      $(".hours").hover(function(){
+        $(".cooks").fadeIn(3000);
+  });
+});
+$(document).ready(function(){
+      $("#order-form").hide();
+      $(".cooks").hover(function(){
+        $("#order-form").fadeIn(3000);
+  });
+});
+    </script>
   </head>
   <body>
-    <div></div>
+    <header>
+      <nav>
+        <section class="logo-img">
+            <img src="images/logo.png" alt="logo" width="100px" height="100px">
+        </section>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#order">Order</a></li>
+        </ul>
+        <section class="michelin-img">
+            <img src="images/star copy.png" alt="logo" width="100px" height="">
+        </section>
+      </nav>
+    </header>
+    <div class="h1">
+        <h1>Kumusta Po Kayo</h1>
+    </div>
+    <main>
+      <section class="hero">
+        <img src="images/hero.png" alt="maindish">
+      </section>
+      <section class="menu" id="menu">
+        <h2>Menus</h2>
+        <div class="menu-item">
+          <img src="images/food2.png" alt="Food 1" width="300px" height="300px">
+          <div class="menu-item-text">
+            <h3>Daytime Menu</h3>
+            <p>feat. almond croissants dipped in Kasama rum syrup</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/food1.png" alt="Food 2" width="300px" height="300px">
+          <div class="menu-item-text">
+            <h3>Dinner Menu</h3>
+            <p>feat. ramen with smoked pork neck broth and braised pork shoulder</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/drink1.png" alt="Food 3" width="300px" height="300px">
+          <div class="menu-item-text">
+            <h3>Drink Menu</h3>
+            <p>feat. the Palawan Peacock</p>
+          </div>
+        </div>
+        <div class="order">
+          <a href="#order-form">Order Now</a>
+        </div>
+      </section>
+      <section class="hours" id="hours">
+        <h2>Hours of Operation</h2>
+        <ul>
+          <li>Wednesday-Sunday: 9am-3pm</li>
+          <li>Thursday-Sunday: Reservation Only</li>
+          <li>*Pastries and drinks available for carryout: 2pm-3pm*</li>
+        </ul>
+        <div class="location">
+          <h2>Location</h2>
+          <p>1001 N. Winchester Ave. Chicago, Illinois 60622</p>
+        </div>
+      </section>
+      <section class="cooks">
+        <img src="images/cooks.jpg" alt="our cooks">
+      </section>
+      <section class="contact" id="contact">
+        <h2>Reserve and Contact Us</h2>
+        <form id="order-form">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>  
+            <ul>
+                <section class="footer social">
+                    <li><div class="social img"></div><a href="#"><img src="images/fb copy.png" alt="Facebook" width="100px" height="100px"></a></div></li>
+                    <li><div class="social img"></div><a href="#"><img src="images/instagram.png" alt="Instagram" width="100px" height="100px"></a></div></li>
+                </section>
+            </ul>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,216 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  
+  body {
+    font-family: Roboto Mono, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 98%;
+    max-height: 200px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #444;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid #964b22;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .h1 {
+    position: relative;
+    text-align: center;
+    font-size: larger;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  /* Hero section */
+  .michelin-img {
+    display: flex;
+  }
+  .hero {
+    background-color: #eee;
+    padding: 20px
+  }
+  
+  .hero img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  /* Menu section */
+  
+  .menu {
+    padding: 2rem 0;
+    margin-left: 30px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  .menu-item img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 80px;
+  }
+  
+  .menu-item-text {
+    margin-left: 2rem;
+  }
+  
+  .menu-item-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .order {
+    margin-top: 2rem;
+  }
+  
+  .order a {
+    display: inline-block;
+    background-color: #964b22;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+  
+  .order a:hover {
+    background-color: #333;
+  }
+  
+  /* Hours section */
+  
+  .hours {
+    background-color: #fcd8db;
+    padding: 2rem 0;
+    padding-left: 10px;
+  }
+  
+  .hours ul {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  .hours ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .hours .location h2 {
+    margin-top: 1rem;
+  }
+  .cooks {
+    position: relative;
+  }
+  
+  /* Contact section */
+  
+  .contact {
+    background-color: #fff;
+    padding: 2rem 0;
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #eee;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: #9a8c32;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+  }
+  .footer{
+    margin-left: 50%;
+    list-style: none;
+  }
+  .social {
+    float: right;
+    margin: 3% 2% 4% 3%;
+    list-style-type: none;
+}
+
+.social > li {
+    display: inline;
+    display: flex;
+}
+
+.social > li > a > img {
+    max-width: 100px;
+    max-height: 100px;
+}
